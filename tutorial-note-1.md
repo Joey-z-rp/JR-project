@@ -8,3 +8,7 @@
 8. file name
 9. git flow
 10. github page
+11. Query string V.S Hash tag
+12. absolute V.S relative URL
+13. Cookie V.S local storage V.S session storage
+14. Event loop
