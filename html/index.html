@@ -67,5 +67,40 @@
     <a href="http://jiangren.com.au" target="_blank">JR Academy</a>
     <img src="https://i.redd.it/6giqv6zjkog21.jpg" alt="cute cat" />
     <img src="/cute-cat.jpg" alt="cute cat" />
+
+    <form method="post" action="/submit-form">
+        <div>
+            <label for="username-id">Username: </label>
+            <input type="text" name="username" id="username-id" required>
+        </div>
+        <div>
+            <label for="email-id">Email: </label>
+            <input type="email" name="email" id="email-id" required>
+        </div>
+        <div>
+            <label for="age-id">Age: </label>
+            <input type="number" name="age" id="age-id">
+        </div>
+        <div>
+            <label for="color-id">Color: </label>
+            <input type="color" name="color" id="color-id">
+        </div>
+        <div>
+            <label for="pet-select">Choose a pet:</label>
+            <select id="pet-select" name="pet">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+            </select>
+        </div>
+        <div>
+            <label for="story">Tell us your story:</label>
+            <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night...</textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
 </body>
 </html>
