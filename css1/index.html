@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <style>
+        h2 {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h2>I'm a colored header</h2>
+    <h2 style="color: red;">I have an inline styling rule</h2>
+    <h2 id="subtitle">I'm styled by id</h2>
+    <h2 class="background-gray">I'm styled by class</h2>
+    <p class="background-gray">I'm also styled by class</p>
+    <a href="#">I'm styled by attibute selector</a>
+
+    <div>
+        <span>I'm a span element and I'm div's direct child</span>
+        <section>
+            <p>I'm a p element and I'm not div's direct child</p>
+            <span>I'm a span and I'm not div's direct child</span>
+        </section>
+        <p>I'm a p element and I'm also div's direct child</p>
+    </div>
+
+    <div class="solid-border">
+        I should have a solid border
+    </div>
+
+    <p class="solid-border">
+        I should not have a solid border
+    </p>
+
+    <button>Hover on me please</button>
+
+    <p class="boring-text">Here is some plain old boring text.</p>
+    <p>Here is some normal text that is neither boring nor exciting.</p>
+    <p class="exciting-text">Contributing to MDN is easy and fun.</p>
+
+    <div class="outer">
+        Outer
+        <div class="middle">
+            Middle
+            <div class="inner">
+                Inner
+            </div>
+        </div>
+    </div>
+
+    <p class="box-model">Some paragraph here.</p>
+
+    <div class="center-inline"><span>I'm a centered inline element</span></div>
+
+    <div class="card">
+        <div class="card__header">
+            <img class="card__header-image" src="https://www.sciencemag.org/sites/default/files/styles/inline__450w__no_aspect/public/cat_16x9.jpg?itok=Tzd9Welk" alt="cat" />
+            <span class="card__header-country">Italy</span>
+        </div>
+        <div class="card__body">
+            <h3>Venice Islands</h3>
+            <p>
+                blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah 
+            </p>
+            <button class="card__button">View more</button>
+        </div>
+    </div>
+
+
+    <div class="media-query">Media query changes my color</div>
+</body>
+</html>
