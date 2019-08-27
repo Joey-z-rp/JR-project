@@ -117,7 +117,7 @@ h2, div, p {
     position: relative;
 }
 
-.card__button {
+.card__body-button {
     background-color: lightblue;
     position: absolute;
     bottom: 10px;

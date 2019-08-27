@@ -1,0 +1,43 @@
+@import 'theme.scss';
+
+$shadow-color: #888;
+
+.shadow {
+    box-shadow: 10px 5px 5px $shadow-color;
+}
+
+.card {
+    width: 250px;
+    
+    @extend .shadow;
+
+    &__header {
+        position: relative;
+        margin: 0;
+
+        &-image {
+            width: 100%;
+        }
+
+        &-country {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            border: none;
+            background-color: $primary-color;
+        }
+    }
+
+    &__body {
+        padding: 0 20px;
+        position: relative;
+
+        &-button {
+            background-color: $secondary-color;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
