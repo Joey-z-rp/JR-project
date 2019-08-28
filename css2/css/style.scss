@@ -1,4 +1,5 @@
-@import 'theme.scss';
+@import 'theme';
+@import 'mediaQuery';
 
 $shadow-color: #888;
 
@@ -6,10 +7,15 @@ $shadow-color: #888;
     box-shadow: 10px 5px 5px $shadow-color;
 }
 
+// @mixin shadow {
+//     box-shadow: 10px 5px 5px $shadow-color;
+// }
+
 .card {
     width: 250px;
     
     @extend .shadow;
+    // @include shadow;
 
     &__header {
         position: relative;
@@ -31,6 +37,11 @@ $shadow-color: #888;
     &__body {
         padding: 0 20px;
         position: relative;
+
+        @include media-query($small) {
+            background-color: black;
+            color: white;
+        }
 
         &-button {
             background-color: $secondary-color;

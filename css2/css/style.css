@@ -23,6 +23,12 @@
   padding: 0 20px;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .card__body {
+    background-color: black;
+    color: white;
+  }
+}
 .card__body-button {
   background-color: lightblue;
   position: absolute;

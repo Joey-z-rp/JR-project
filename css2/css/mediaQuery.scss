@@ -1,0 +1,23 @@
+$small: 480px;
+$medium: 960px;
+$large: 1280px;
+
+@mixin media-query($break-point) {
+    @if $break-point == $small {
+        @media screen and (max-width: $small) {
+            @content;
+        }
+    }
+
+    @else if $break-point == $medium {
+        @media screen and (max-width: $medium) {
+            @content;
+        }
+    }
+
+    @else if $break-point == $large {
+        @media screen and (max-width: $large) {
+            @content;
+        }
+    }
+}
