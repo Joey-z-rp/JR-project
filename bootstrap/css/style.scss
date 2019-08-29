@@ -1,0 +1,37 @@
+$primary-color: bisque;
+$secondary-color: lightblue;
+$shadow-color: #888;
+
+.shadow {
+    box-shadow: 10px 5px 5px $shadow-color;
+}
+
+.card {
+    &__header {
+        position: relative;
+        margin: 0;
+
+        &-image {
+            width: 100%;
+        }
+
+        &-country {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: white;
+        }
+    }
+
+    &__body {
+        padding: 0 20px;
+        position: relative;
+
+        &-button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

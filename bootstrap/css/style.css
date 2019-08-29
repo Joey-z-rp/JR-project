@@ -1,0 +1,29 @@
+.shadow {
+  box-shadow: 10px 5px 5px #888;
+}
+
+.card__header {
+  position: relative;
+  margin: 0;
+}
+.card__header-image {
+  width: 100%;
+}
+.card__header-country {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+}
+.card__body {
+  padding: 0 20px;
+  position: relative;
+}
+.card__body-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*# sourceMappingURL=style.css.map */
